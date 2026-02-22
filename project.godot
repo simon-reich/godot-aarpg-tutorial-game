@@ -22,6 +22,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 LevelManager="*res://00_Globals/global_level_manager.gd"
+PlayerHud="*uid://d3loeo1yate6a"
 PlayerManager="*uid://cfe47pnes2bvk"
 
 [display]
