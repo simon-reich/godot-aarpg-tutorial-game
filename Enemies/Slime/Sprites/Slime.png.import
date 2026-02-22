@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7ybfv1fxyyi5"
-path="res://.godot/imported/gui-health.png-a10b03a792cb13e0abcbaf77253ec000.ctex"
+uid="uid://u4xv1yymxign"
+path="res://.godot/imported/Slime.png-361f6ac8fed114714edffce2b144f034.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/gui-health.png"
-dest_files=["res://.godot/imported/gui-health.png-a10b03a792cb13e0abcbaf77253ec000.ctex"]
+source_file="res://Enemies/Slime/Sprites/Slime.png"
+dest_files=["res://.godot/imported/Slime.png-361f6ac8fed114714edffce2b144f034.ctex"]
 
 [params]
 
