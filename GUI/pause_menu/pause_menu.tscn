@@ -1,10 +1,9 @@
 [gd_scene format=3 uid="uid://bl17ucpdcgfw2"]
 
-[ext_resource type="Script" uid="uid://c3w686bphb37x" path="res://GUI/pause_menu/pause_menu.gd" id="1_4w82k"]
-[ext_resource type="Texture2D" uid="uid://fw1tfnxsj1po" path="res://Items/Sprites/items.png" id="2_rsqrg"]
-[ext_resource type="PackedScene" uid="uid://h3qknxpmaahd" path="res://GUI/pause_menu/inventory/inventory_slot.tscn" id="3_36pfd"]
-[ext_resource type="Script" uid="uid://njdbgfrvhluj" path="res://GUI/pause_menu/inventory/scripts/inventory_ui.gd" id="3_ewgu5"]
-[ext_resource type="Resource" uid="uid://cvgdtu0h41xk7" path="res://GUI/pause_menu/inventory/player_inventory.tres" id="4_ewgu5"]
+[ext_resource type="Script" uid="uid://c3w686bphb37x" path="res://gui/pause_menu/pause_menu.gd" id="1_4w82k"]
+[ext_resource type="Texture2D" uid="uid://fw1tfnxsj1po" path="res://items/sprites/items.png" id="2_rsqrg"]
+[ext_resource type="Script" uid="uid://njdbgfrvhluj" path="res://gui/pause_menu/inventory/scripts/inventory_ui.gd" id="3_ewgu5"]
+[ext_resource type="Resource" uid="uid://cvgdtu0h41xk7" path="res://gui/pause_menu/inventory/player_inventory.tres" id="4_ewgu5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ewgu5"]
 atlas = ExtResource("2_rsqrg")
@@ -74,7 +73,6 @@ offset_bottom = 67.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 10
-text = "This item"
 autowrap_mode = 2
 
 [node name="PanelContainer" type="PanelContainer" parent="Control" unique_id=354253235]
@@ -90,27 +88,6 @@ layout_mode = 2
 columns = 5
 script = ExtResource("3_ewgu5")
 data = ExtResource("4_ewgu5")
-
-[node name="InventorySlot" parent="Control/PanelContainer/GridContainer" unique_id=1921555767 instance=ExtResource("3_36pfd")]
-layout_mode = 2
-
-[node name="InventorySlot2" parent="Control/PanelContainer/GridContainer" unique_id=2063775858 instance=ExtResource("3_36pfd")]
-layout_mode = 2
-
-[node name="InventorySlot3" parent="Control/PanelContainer/GridContainer" unique_id=1747013583 instance=ExtResource("3_36pfd")]
-layout_mode = 2
-
-[node name="InventorySlot4" parent="Control/PanelContainer/GridContainer" unique_id=1661296189 instance=ExtResource("3_36pfd")]
-layout_mode = 2
-
-[node name="InventorySlot5" parent="Control/PanelContainer/GridContainer" unique_id=1986258200 instance=ExtResource("3_36pfd")]
-layout_mode = 2
-
-[node name="InventorySlot6" parent="Control/PanelContainer/GridContainer" unique_id=2099065418 instance=ExtResource("3_36pfd")]
-layout_mode = 2
-
-[node name="InventorySlot7" parent="Control/PanelContainer/GridContainer" unique_id=159143514 instance=ExtResource("3_36pfd")]
-layout_mode = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Control" unique_id=329294441]
 layout_mode = 1
@@ -134,3 +111,6 @@ layout_mode = 2
 size_flags_horizontal = 0
 theme_override_font_sizes/font_size = 10
 text = "Load"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Control" unique_id=1907097097]
+max_polyphony = 4

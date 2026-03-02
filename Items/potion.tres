@@ -1,15 +1,25 @@
 [gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://dt7ovdpkw22yw"]
 
-[ext_resource type="Script" uid="uid://wmeuvx5sknmd" path="res://Items/Scripts/item_data.gd" id="1_hw0jr"]
-[ext_resource type="Texture2D" uid="uid://fw1tfnxsj1po" path="res://Items/Sprites/items.png" id="2_5vqjr"]
+[ext_resource type="Script" uid="uid://hkuwobv54fo3" path="res://items/item_effects/item_effect.gd" id="1_hxf14"]
+[ext_resource type="Script" uid="uid://b5bpou1w1tih6" path="res://items/item_effects/item_effect_heal.gd" id="2_u0y06"]
+[ext_resource type="AudioStream" uid="uid://gayjnacystv2" path="res://items/item_effects/audio/hp-up.wav" id="3_ncbnu"]
+[ext_resource type="Script" uid="uid://wmeuvx5sknmd" path="res://items/scripts/item_data.gd" id="4_q7uc3"]
+[ext_resource type="Texture2D" uid="uid://fw1tfnxsj1po" path="res://items/sprites/items.png" id="5_vla4f"]
+
+[sub_resource type="Resource" id="Resource_hougk"]
+script = ExtResource("2_u0y06")
+heal_amount = 6
+audio = ExtResource("3_ncbnu")
+metadata/_custom_type_script = "uid://b5bpou1w1tih6"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_t8xv6"]
-atlas = ExtResource("2_5vqjr")
+atlas = ExtResource("5_vla4f")
 region = Rect2(32, 0, 32, 32)
 
 [resource]
-script = ExtResource("1_hw0jr")
+script = ExtResource("4_q7uc3")
 name = "Potion"
 description = "Potion potion potion!"
 texture = SubResource("AtlasTexture_t8xv6")
+effects = Array[ExtResource("1_hxf14")]([SubResource("Resource_hougk")])
 metadata/_custom_type_script = "uid://wmeuvx5sknmd"

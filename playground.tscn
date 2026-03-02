@@ -1,10 +1,10 @@
 [gd_scene format=4 uid="uid://y8q8681el5iy"]
 
-[ext_resource type="Script" uid="uid://ctd7cacx3ubxi" path="res://Levels/Scripts/level.gd" id="1_o00ia"]
-[ext_resource type="PackedScene" uid="uid://byqrf10xewo86" path="res://Tile Maps/grass-01-layer0.tscn" id="2_wt17y"]
-[ext_resource type="PackedScene" uid="uid://cvg1n1njvfalo" path="res://Props/Plants/plant.tscn" id="3_m8u5f"]
-[ext_resource type="PackedScene" uid="uid://bgb5mdwjp56p7" path="res://Enemies/Slime/slime.tscn" id="4_is3ju"]
-[ext_resource type="PackedScene" uid="uid://cwxpdlns48fg6" path="res://Levels/player_spawn.tscn" id="4_o00ia"]
+[ext_resource type="Script" uid="uid://ctd7cacx3ubxi" path="res://levels/scripts/level.gd" id="1_o00ia"]
+[ext_resource type="PackedScene" uid="uid://byqrf10xewo86" path="res://tile_maps/grass_01.tscn" id="2_wt17y"]
+[ext_resource type="PackedScene" uid="uid://cvg1n1njvfalo" path="res://props/plants/plant.tscn" id="3_m8u5f"]
+[ext_resource type="PackedScene" uid="uid://bgb5mdwjp56p7" path="res://enemies/slime/slime.tscn" id="4_is3ju"]
+[ext_resource type="PackedScene" uid="uid://cwxpdlns48fg6" path="res://levels/player_spawn.tscn" id="4_o00ia"]
 
 [node name="Playground" type="Node2D" unique_id=252239517]
 y_sort_enabled = true

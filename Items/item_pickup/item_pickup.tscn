@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dpliddk1be4r6"]
+
+[ext_resource type="Script" uid="uid://bda5cqassu177" path="res://items/item_pickup/item_pickup.gd" id="1_0g51u"]
+[ext_resource type="AudioStream" uid="uid://wgyb7k268y35" path="res://items/item_pickup/item_pickup.wav" id="2_0rscd"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0g51u"]
+
+[node name="ItemPickup" type="Node2D" unique_id=1496338694]
+script = ExtResource("1_0g51u")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=599100340]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1272067312]
+shape = SubResource("CircleShape2D_0g51u")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2104524136]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=2089871648]
+stream = ExtResource("2_0rscd")

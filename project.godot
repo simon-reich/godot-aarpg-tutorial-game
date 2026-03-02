@@ -15,13 +15,13 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="aarpg-tutorial-game"
-run/main_scene="uid://y8q8681el5iy"
+run/main_scene="uid://wgix6x0762cn"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
-LevelManager="*res://00_Globals/global_level_manager.gd"
+LevelManager="*res://00_globals/global_level_manager.gd"
 PlayerHud="*uid://d3loeo1yate6a"
 PlayerManager="*uid://cfe47pnes2bvk"
 SaveManager="*uid://cktf5l81dxmt8"
