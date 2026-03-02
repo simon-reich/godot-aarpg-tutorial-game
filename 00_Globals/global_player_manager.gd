@@ -14,6 +14,10 @@ func add_player_instance() -> void:
 	player = PLAYER.instantiate()
 	add_child(player)
 
+func set_player_health(max_hp: int, hp: int) -> void:
+	player.max_hp = max_hp
+	player.hp = hp
+
 func set_player_postion(new_pos: Vector2) -> void:
 	player.global_position = new_pos
 	print("new pos ", new_pos)
