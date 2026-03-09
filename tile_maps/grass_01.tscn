@@ -481,7 +481,7 @@ terrain_set_0/terrain_0/name = "Path"
 terrain_set_0/terrain_0/color = Color(0.5, 0.34375, 0.25, 1)
 sources/0 = SubResource("TileSetAtlasSource_kpenc")
 
-[node name="Grass-01" type="TileMapLayer"]
+[node name="Grass-01" type="TileMapLayer" unique_id=2143161067]
 z_index = -1
 use_parent_material = true
 tile_set = SubResource("TileSet_vy4p5")
